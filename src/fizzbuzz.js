@@ -1,7 +1,8 @@
 const fizzbuzz = number => {
-  if (number % 15 === 0) return 'FizzBuzz'
-  if (number % 3 === 0) return 'Fizz'
-  if (number % 5 === 0) return 'Buzz'
+  const divisibleBy = mod => number % mod === 0
+  if (divisibleBy(15)) return 'FizzBuzz'
+  if (divisibleBy(3)) return 'Fizz'
+  if (divisibleBy(5)) return 'Buzz'
   return `${number}`
 }
 
