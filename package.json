@@ -5,7 +5,9 @@
   "description": "Basic JS exercises to practice TDD and develop your logic",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint . && prettier-eslint --list-different $PWD/**/*.js",
+    "format": "prettier-eslint --write $PWD/**/*.js"
   },
   "keywords": [
     "tdd",
@@ -17,6 +19,7 @@
   "devDependencies": {
     "eslint": "^6.8.0",
     "eslint-plugin-jest": "^23.8.2",
-    "jest": "^25.1.0"
+    "jest": "^25.1.0",
+    "prettier-eslint-cli": "^5.0.0"
   }
 }

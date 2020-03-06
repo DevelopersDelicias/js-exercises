@@ -1,3 +1,3 @@
-const fizzbuzz = () => {};
+const fizzbuzz = () => {}
 
-module.exports = fizzbuzz;
+module.exports = fizzbuzz
