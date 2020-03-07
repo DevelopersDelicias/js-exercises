@@ -33,6 +33,15 @@ Given an integer number, return:
 
 Files: `src/fizzbuzz.js` and `tests/fizzbuzz.test.js`
 
+### Roman Numbers
+
+- `asRoman(decimal)`: Converts a decimal number to its Roman Numeral representation.
+- `asDecimal(roman)`: Converts a `string` roman numeral representation to decimal
+
+Reference: https://en.wikipedia.org/wiki/Roman_numerals
+
+Files: `src/roman_numbers.js` and `tests/roman_numbers.test.js`
+
 ## How to contribute
 
 If you wish to contribute to this project please do the next steps:
