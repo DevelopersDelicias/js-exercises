@@ -10,7 +10,7 @@ const scenarios = [
   { decimal: 5, roman: 'V' },
   { decimal: 6, roman: 'VI' },
   { decimal: 7, roman: 'VII' },
-  { decimal: 8, roman: 'VII' },
+  { decimal: 8, roman: 'VIII' },
   { decimal: 9, roman: 'IX' },
   { decimal: 10, roman: 'X' },
   { decimal: 11, roman: 'XI' },
