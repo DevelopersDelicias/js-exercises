@@ -20,7 +20,7 @@ const scenarios = [
   { decimal: 15, roman: 'XV' },
   { decimal: 16, roman: 'XVI' },
   { decimal: 17, roman: 'XVII' },
-  { decimal: 18, roman: 'XVII' },
+  { decimal: 18, roman: 'XVIII' },
   { decimal: 19, roman: 'XIX' },
   { decimal: 20, roman: 'XX' },
   { decimal: 21, roman: 'XXI' },
