@@ -22,4 +22,12 @@ module.exports.asRoman = (decimal) => {
     return acc
   }, '')
 }
-module.exports.asDecimal = () => {}
+module.exports.asDecimal = (roman) => {
+  return ROMANS.reduce((acc, r) => {
+    while (roman.startsWith(r.roman)) {
+      acc += r.decimal
+      roman = roman.substr(r.roman.length, roman.length - 1)
+    }
+    return acc
+  }, 0)
+}
