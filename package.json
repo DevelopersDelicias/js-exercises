@@ -10,6 +10,8 @@
     "test:fizzbuzz:watch": "jest --watchAll tests/fizzbuzz.test.js",
     "test:roman": "jest tests/roman_numbers.test.js",
     "test:roman:watch": "jest --watchAll tests/roman_numbers.test.js",
+    "test:english_number_names": "jest tests/english_number_names.test.js",
+    "test:english_number_names:watch": "jest --watchAll tests/english_number_names.test.js",
     "lint": "eslint --fix src tests ",
     "format": "prettier-eslint --write $PWD/**/*.js"
   },

@@ -42,6 +42,14 @@ Reference: https://en.wikipedia.org/wiki/Roman_numerals
 
 Files: `src/roman_numbers.js` and `tests/roman_numbers.test.js`
 
+### English number names
+
+Given an integer number, return its name in English.
+
+Reference: https://en.wikipedia.org/wiki/English_numerals
+
+Files: `src/english_number_names.js` and `tests/english_number_names.test.js`
+
 ## How to contribute
 
 If you wish to contribute to this project please do the next steps:
