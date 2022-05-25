@@ -50,6 +50,23 @@ Reference: https://en.wikipedia.org/wiki/English_numerals
 
 Files: `src/english_number_names.js` and `tests/english_number_names.test.js`
 
+### Array product exclusion
+
+Given an array of integers, return an array of integers such that the value at index `i` of the output is the product of everything in the input except the input value at index `i`.
+An empty list should return `[]`.
+A list of length 1 should return `[1]` no matter what the input element is.
+
+Example:
+
+```js
+productExclusion([]) => [];
+productExclusion([2]) => [1];
+productExclusion([3]) => [1];
+productExclusion([1, 2]) => [2, 1];
+productExclusion([1, 2, 3]) => [6, 3, 2];
+productExclusion([2, 3, 4, 5]) => [60, 40, 30, 24];
+```
+
 ## How to contribute
 
 If you wish to contribute to this project please do the next steps:
