@@ -76,9 +76,7 @@ const numbers = [
 ]
 
 describe('englishNumberName()', () => {
-  numbers.forEach(({ value, name }) => {
-    it(`The name of value ${value} is ${name}`, () => {
-      expect(englishNumberName(value)).toEqual(name)
-    })
+  it.each(numbers)('$value => $name', ({ value, name }) => {
+    expect(englishNumberName(value)).toEqual(name)
   })
 })
