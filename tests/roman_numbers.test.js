@@ -96,18 +96,14 @@ const scenarios = [
 
 describe('roman numbers', () => {
   describe('asRoman()', () => {
-    scenarios.forEach(({ decimal, roman }) => {
-      it(`${decimal} decimal number is ${roman} Roman Numeral`, () => {
-        expect(asRoman(decimal)).toEqual(roman)
-      })
+    it.each(scenarios)('$decimal => $roman', ({ decimal, roman }) => {
+      expect(asRoman(decimal)).toEqual(roman)
     })
   })
 
   describe('asDecimal()', () => {
-    scenarios.forEach(({ decimal, roman }) => {
-      it(`${roman} Roman Numeral is ${decimal} decimal number`, () => {
-        expect(asDecimal(roman)).toEqual(decimal)
-      })
+    it.each(scenarios)('$roman => $decimal', ({ decimal, roman }) => {
+      expect(asDecimal(roman)).toEqual(decimal)
     })
   })
 })
