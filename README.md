@@ -99,6 +99,33 @@ Find out the state of the asteroids after all collisions. If two asteroids meet,
 
 **Explanation**: The 2 and -5 collide resulting in -5. The 10 and -5 collide resulting in 10.
 
+### Time Format
+
+Create a function called `time`` that takes an integer representing the time value in a human-readable format based on the input value.
+
+The possible units to display the time are as follows:
+
+- s (seconds): 0s, 1s, 2s, ..., 59s
+- m (minutes): 1m, 2m, ..., 59m (equivalent to 60 seconds)
+- h (hours): 1h, 2h, ..., 23h (equivalent to 60 minutes)
+- d (days): 1d, 2d, ..., 6d (equivalent to 24 hours)
+- w (weeks): 1w, 2w, ... (equivalent to 7 days)
+- y (year) 1y, 2y, ... (equivalent to 365 days)
+
+In case the input is not an exact match for any unit, it should display the largest unit followed by the next unit only if it is consecutive.
+
+### Examples:
+
+- `time(0)` => `"0s"`
+- `time(60)` => `"1m"`
+- `time(3600)` => `"1h"`
+- `time(3600 * 24)` => `"1d"`
+- `time(3600 * 24 * 7)` => `"1w"`
+- `time(3600 * 24 * 365)` => `"1y"`
+- `time(65)` => `"1m 5s"`
+- `time(3669)` => `"1h 1m 9s"`
+- `time(3609)` => `"1h"` (only hours are displayed as there are no minutes)
+
 ## How to contribute
 
 If you wish to contribute to this project please do the next steps:

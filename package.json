@@ -12,6 +12,8 @@
     "test:roman:watch": "jest --watchAll tests/roman_numbers.test.js",
     "test:english_number_names": "jest tests/english_number_names.test.js",
     "test:english_number_names:watch": "jest --watchAll tests/english_number_names.test.js",
+    "test:time": "jest tests/time.test.js",
+    "test:time:watch": "jest --watchAll tests/time.test.js",
     "lint": "eslint --fix src tests ",
     "format": "prettier-eslint --write $PWD/**/*.js"
   },
