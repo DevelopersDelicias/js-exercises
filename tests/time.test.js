@@ -75,7 +75,7 @@ describe('time(seconds)', () => {
         seconds: yearsToSeconds(2) + 9,
         expected: '2y',
       },
-      { name: '2.5 years', seconds: yearsToSeconds(2.5), expected: '2y 26w' },
+      { name: '2.5 days', seconds: daysToSeconds(2.5), expected: '2d 12h' },
       {
         name: '3 years, 1 week, 3 days and 59 seconds',
         seconds: yearsToSeconds(3) + weeksToSeconds(1) + daysToSeconds(3) + 59,
