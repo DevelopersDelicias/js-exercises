@@ -11,37 +11,37 @@ const numbers = (length, start = 1) =>
 
 describe('time(seconds)', () => {
   describe('works for seconds', () => {
-    it.each(numbers(59, 0))('%is', n => {
+    it.each(numbers(60, 0))('%i seconds', n => {
       expect(time(n)).toEqual(`${n}s`)
     })
   })
 
   describe('works for minutes', () => {
-    it.each(numbers(59))('%im', n => {
+    it.each(numbers(59))('%i minutes', n => {
       expect(time(minutesToSeconds(n))).toEqual(`${n}m`)
     })
   })
 
   describe('works for hours', () => {
-    it.each(numbers(23))('%ih', n => {
+    it.each(numbers(23))('%i hours', n => {
       expect(time(hoursToSeconds(n))).toEqual(`${n}h`)
     })
   })
 
   describe('works for days', () => {
-    it.each(numbers(6))('%id', n => {
+    it.each(numbers(6))('%i days', n => {
       expect(time(daysToSeconds(n))).toEqual(`${n}d`)
     })
   })
 
   describe('works for weeks', () => {
-    it.each(numbers(51))('%iw', n => {
+    it.each(numbers(51))('%i weeks', n => {
       expect(time(weeksToSeconds(n))).toEqual(`${n}w`)
     })
   })
 
   describe('works for years', () => {
-    it.each(numbers(3))('%iy', n => {
+    it.each(numbers(3))('%i years', n => {
       expect(time(yearsToSeconds(n))).toEqual(`${n}y`)
     })
   })
