@@ -1,6 +1,6 @@
 # JS Exercises
 
-This projects can be used to experiment with basic algorithms implemented in JavaScript.
+This project can be used to experiment with basic algorithms implemented in JavaScript.
 
 ## Installation
 
@@ -15,9 +15,9 @@ This projects can be used to experiment with basic algorithms implemented in Jav
 
 1. Create a new branch with the suggested structure `{github_account_name}-solution` (e.g: `bcisneros-solution`).
 2. Choose the exercise you want to resolve and run the corresponding tests (e.g `npm run test:fizzbuzz`)
-3. Read the description and modify the code to make pass all rules.
+3. Read the description and modify the code to pass all rules.
 4. Format your code using VS Code Prettier extension or running `npm run format`
-5. Check the code has not Linter errors with `npm run lint`
+5. Check the code has no Linter errors with `npm run lint`
 6. Push your branch to Github: `git push -u origin {your_branch}`
 
 ## Exercises
@@ -36,7 +36,7 @@ Files: `src/fizzbuzz.js` and `tests/fizzbuzz.test.js`
 ### Roman Numbers
 
 - `asRoman(decimal)`: Converts a decimal number to its Roman Numeral representation.
-- `asDecimal(roman)`: Converts a `string` roman numeral representation to decimal
+- `asDecimal(roman)`: Converts a `string` Roman Numeral representation to decimal
 
 Reference: https://en.wikipedia.org/wiki/Roman_numerals
 
@@ -54,7 +54,7 @@ Files: `src/english_number_names.js` and `tests/english_number_names.test.js`
 
 Given an array of integers, return an array of integers such that the value at index `i` of the output is the product of everything in the input except the input value at index `i`.
 An empty list should return `[]`.
-A list of length 1 should return `[1]` no matter what the input element is.
+A list of length 1 should return `[1]` no matter the input element.
 
 Example:
 
@@ -71,37 +71,38 @@ productExclusion([2, 3, 4, 5]) => [60, 40, 30, 24];
 
 We are given an array of `asteroids` of integers representing asteroids in a row.
 
-For each asteroid, the absolute value represents the size, and the sign represents its direction (positive meaning right, negative meaning left). Each asteroid moves at the same speed.
+For each asteroid, the absolute value represents the size, and the sign represents its direction (positive meaning right direction, negative meaning left direction). Each asteroid moves at the same speed.
 
 Find out the state of the asteroids after all collisions. If two asteroids meet, the smaller one will explode. If both are the same size, both will explode. Two asteroids moving in the same direction will never meet.
 
-#### Example 1
+#### Examples
 
-**Input**: asteroids = [5, 10, -5]
+```js
+// Example 1
+const asteroids = [5, 10, -5]
+asteroidColitions(asteroids)
+// Produces [5, 10]
+// Explanation: The 10 and -5 collide resulting in 10. The 5 and 10 never collide.
 
-**Output**: [5, 10]
 
-**Explanation**: The 10 and -5 collide resulting in 10. The 5 and 10 never collide.
+// Example 2
+const asteroids = [8, -8]
+asteroidColitions(asteroids)
+// Produces []
+//Explanation: The 8 and -8 collide exploding each other.
 
-#### Example 2
 
-**Input**: asteroids = [8, -8]
+// Example 3
+const asteroids = [10, 2, -5]
+asteroidColitions(asteroids)
+// Produces [10]
+// The 2 and -5 collide resulting in -5. The 10 and -5 collide resulting in 10.
 
-**Output**: []
-
-**Explanation**: The 8 and -8 collide exploding each other.
-
-#### Example 3
-
-**Input**: asteroids = [10, 2, -5]
-
-**Output**: [10]
-
-**Explanation**: The 2 and -5 collide resulting in -5. The 10 and -5 collide resulting in 10.
+```
 
 ### Time Format
 
-Create a function called `time`` that takes an integer representing the time value in a human-readable format based on the input value.
+Create a function called `time` that takes an integer representing the time value in a human-readable format based on the input value.
 
 The possible units to display the time are as follows:
 
@@ -130,13 +131,13 @@ In case the input is not an exact match for any unit, it should display the larg
 
 If you wish to contribute to this project please do the next steps:
 
-1. Create a new issue in Github explaining what is the purpose of your contribution. For example: Add new exercise, Fixing typos, etc..
+1. Create a new issue in Github explaining what is the purpose of your contribution. For example: Adding new exercises, Fixing typos, etc..
 
 2. Create a new branch with the following name convention: `{issue_number}-{description}` (e.g `123-fix-typo-in-readme`)
 
-3. Modify the code and push your branch to Github.
+3. Modify the code and push your branch to GitHub.
 
-4. Create a new Pull Request and assign `bcisneros` as the Approver and optionally other team members. Select `master` as destination branch.
+4. Create a new Pull Request and assign `bcisneros` as the Approver and optionally other team members. Select `master` as the destination branch.
 
 5. The Pull Request will be reviewed and if there are no comments or suggestions the changes will be merged to `master`
 
