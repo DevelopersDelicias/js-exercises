@@ -33,6 +33,26 @@ Given an integer number, return:
 
 Files: `src/fizzbuzz.js` and `tests/fizzbuzz.test.js`
 
+### Hello
+
+Write a function with name `hello` that receives a string that represents a person name and returns another string that represents a greeting to that person, with the following rules:
+
+- For single names return `"Hello {name}!"`
+  - `hello("John")` returns `Hello John!`
+  - `hello("Susan")` returns `Hello Susan!`
+- If name is Robert, Katherine or Garfield, return `"Hello {nickname}!"`
+  - `hello("Robert")` returns `Hello Bob!`
+  - `hello("Katherine")` returns `Hello Katy!`
+  - `hello("Garfield")` returns `Hello Mr. G!`
+- If the name has a length of 10 or more letters, return only the first 3 letters
+  - `hello("Maximiliano")` returns `Hello Max!`
+  - `hello("Evangeline")` returns `Hello Eva!`
+- Names are capitalized, regardless if they come in any combination of lower and upper cases:
+  - `hello("ariana")` returns `Hello Ariana!`
+  - `hello("CESAR")` returns `Hello Cesar!`
+  - `hello("OrlANDo")` returns `Hello Orlando!`
+  - `hello("robert")` returns `Hello Bob!` because nickname rule
+
 ### Roman Numbers
 
 - `asRoman(decimal)`: Converts a decimal number to its Roman Numeral representation.
